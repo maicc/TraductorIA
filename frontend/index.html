@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Traductor con GPT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Traductor</h1>
+
+    <textarea id="inputText" placeholder="Escribe el texto a traducir..."></textarea>
+
+    <div class="options">
+      <select id="sourceLang">
+        <option value="español">Español</option>
+        <option value="inglés">Inglés</option>
+        <option value="japonés">Japonés</option>
+      </select>
+
+      <span>→</span>
+
+      <select id="targetLang">
+        <option value="inglés">Inglés</option>
+        <option value="español">Español</option>
+        <option value="japonés">Japonés</option>
+      </select>
+
+      <select id="model">
+        <option value="gpt-3.5-turbo">GPT-3.5</option>
+        <option value="gpt-4o">GPT-4o</option>
+      </select>
+    </div>
+
+    <button id="translateBtn">Traducir</button>
+
+    <h3>Traducción:</h3>
+    <div id="outputText"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
